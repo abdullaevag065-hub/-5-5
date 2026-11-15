@@ -1,0 +1,89 @@
+.detail-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  .detail-card {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .detail-image {
+      flex: 1;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    }
+
+    .detail-info {
+      flex: 1.5;
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 28px;
+      }
+
+      .detail-meta {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px;
+        color: #666;
+        font-size: 15px;
+
+        .badge {
+          background-color: #ff6b35;
+          color: #fff;
+          padding: 4px 12px;
+          border-radius: 20px;
+          font-weight: 600;
+        }
+      }
+
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .ingredients-list,
+      .instructions-list {
+        padding-left: 20px;
+        line-height: 1.6;
+        color: #444;
+
+        li {
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}

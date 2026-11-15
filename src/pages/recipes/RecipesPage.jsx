@@ -1,6 +1,5 @@
 import './recipes.scss'
 import food from '../../img/food.png'
-import food2 from '../../img/food2.png'
 import SimpleRecipes from './companets/SimpleRecipes/SimpleRecipes'
 
 
@@ -18,13 +17,7 @@ export default function RecipesPage() {
             <span>♨ Easy Recipe</span>
           </div>
 
-          <div className="recipe-author">
-                <div className="author-avatar">UM</div>
-              <div>
-                <b>Umar Manapov</b>
-                <small>Foodieland kitchen</small>
-              </div>
-          </div>
+
         </div>
        <div className="recipe-photo"><img src={food} alt="Japanese fried rice" /></div>
       </section>
